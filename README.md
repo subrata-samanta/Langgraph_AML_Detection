@@ -1,12 +1,26 @@
-# Langgraph_AML_Detection
-A Python-based Anti-Money Laundering (AML) detection system built using LangGraph framework. This tool leverages graph-based analysis to identify suspicious financial patterns and potential money laundering activities. Features graph-based transaction analysis and pattern detection for enhanced AML compliance.
-
-
 # AML Detection System using LangGraph
 
-A sophisticated Anti-Money Laundering (AML) detection system built using the LangGraph framework. This system employs graph-based analysis and LLM-powered detection to identify suspicious financial patterns and potential money laundering activities.
+A sophisticated Anti-Money Laundering (AML) detection system built using the LangGraph framework. This tool leverages graph-based analysis to identify suspicious financial patterns and potential money laundering activities. Features graph-based transaction analysis and pattern detection for enhanced AML compliance.
 
 ## Features
+
+
+## System Architecture
+
+![AML Detection System Architecture](https://github.com/subrata-samanta/Langgraph_AML_Detection/blob/main/graph.png)
+
+The system uses a state-based graph workflow with the following key components:
+
+- **State Management**: [`AMLState`](aml.py) class handling transaction data and analysis results
+- **Risk Assessment Nodes**:
+  - Document Analysis
+  - Geographic Risk Assessment
+  - Behavioral Analysis
+  - Crypto Risk Analysis
+  - Sanctions Screening
+  - PEP Screening
+- **Decision Routing**: Conditional paths based on risk levels and transaction types
+
 
 ### Core Functionality
 - Graph-based transaction analysis workflow
@@ -25,22 +39,6 @@ A sophisticated Anti-Money Laundering (AML) detection system built using the Lan
 - Risk-based routing and decisioning
 - Document analysis using LLM
 - Configurable risk thresholds
-
-## System Architecture
-
-![AML Detection System Architecture](https://github.com/subrata-samanta/Langgraph_AML_Detection/blob/main/graph.png)
-
-The system uses a state-based graph workflow with the following key components:
-
-- **State Management**: [`AMLState`](aml.py) class handling transaction data and analysis results
-- **Risk Assessment Nodes**:
-  - Document Analysis
-  - Geographic Risk Assessment
-  - Behavioral Analysis
-  - Crypto Risk Analysis
-  - Sanctions Screening
-  - PEP Screening
-- **Decision Routing**: Conditional paths based on risk levels and transaction types
 
 ## Setup
 
