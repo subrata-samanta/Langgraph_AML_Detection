@@ -2,8 +2,6 @@
 
 A sophisticated Anti-Money Laundering (AML) detection system built using the LangGraph framework. This tool leverages graph-based analysis to identify suspicious financial patterns and potential money laundering activities. Features graph-based transaction analysis and pattern detection for enhanced AML compliance.
 
-## Features
-
 
 ## System Architecture
 
@@ -21,6 +19,8 @@ The system uses a state-based graph workflow with the following key components:
   - PEP Screening
 - **Decision Routing**: Conditional paths based on risk levels and transaction types
 
+
+## Features
 
 ### Core Functionality
 - Graph-based transaction analysis workflow
