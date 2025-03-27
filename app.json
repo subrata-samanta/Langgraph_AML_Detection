@@ -1,0 +1,208 @@
+[
+    {
+        "transaction": {
+            "amount": 9500,
+            "origin_country": "US",
+            "destination_country": "CA",
+            "parties": [
+                "retail_chain_inc"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571",
+            "documents": [
+                "Invoice #SMF-4587"
+            ],
+            "frequency": 8
+        },
+        "customer": {
+            "name": "James Smith",
+            "account_age_days": 120,
+            "transaction_history": [
+                {
+                    "amount": 9200,
+                    "timestamp": "2025-03-27T17:20:16.639571"
+                },
+                {
+                    "amount": 9350,
+                    "timestamp": "2025-03-27T15:20:16.639571"
+                }
+            ]
+        },
+        "scenario": "Repeated sub-threshold transactions (structuring)",
+        "expected_outcome": "SAR filing for structuring"
+    },
+    {
+        "transaction": {
+            "amount": 200000,
+            "origin_country": "IR",
+            "destination_country": "DE",
+            "parties": [
+                "tehran_exporters"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571",
+            "documents": [
+                "Trade Agreement #IR-789"
+            ]
+        },
+        "customer": {
+            "name": "Ali Reza",
+            "account_age_days": 45,
+            "transaction_history": []
+        },
+        "scenario": "High-risk country transaction",
+        "expected_outcome": "High risk score + enhanced due diligence"
+    },
+    {
+        "transaction": {
+            "amount": 500000,
+            "origin_country": "NG",
+            "destination_country": "CH",
+            "parties": [
+                "gov_ministry_ng"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571",
+            "documents": [
+                "Contract NG-GOV-2024"
+            ]
+        },
+        "customer": {
+            "name": "Minister Adebayo Gov",
+            "account_age_days": 10,
+            "transaction_history": []
+        },
+        "scenario": "PEP transaction",
+        "expected_outcome": "Immediate PEP alert + SAR filing"
+    },
+    {
+        "transaction": {
+            "amount": 150000,
+            "asset_type": "CRYPTO",
+            "crypto_details": {
+                "wallet_age_days": 3,
+                "mixer_used": true,
+                "cross_chain_swaps": 4
+            },
+            "timestamp": "2025-03-27T19:20:16.639571"
+        },
+        "customer": {
+            "name": "Blockchain Solutions Ltd",
+            "account_age_days": 30,
+            "transaction_history": []
+        },
+        "scenario": "Cryptocurrency mixer usage",
+        "expected_outcome": "High crypto risk score + SAR"
+    },
+    {
+        "transaction": {
+            "amount": 500000,
+            "origin_country": "CN",
+            "destination_country": "VN",
+            "parties": [
+                "textile_export_cn"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571",
+            "documents": [
+                "Invoice #TXT-2024 (5000kg silk @ $100/kg)",
+                "Customs Valuation Report (Actual Value: $300k)"
+            ]
+        },
+        "customer": {
+            "name": "Vietnam Textiles Corp",
+            "account_age_days": 60,
+            "transaction_history": []
+        },
+        "scenario": "Trade invoice mismatch",
+        "expected_outcome": "Document anomaly alert + investigation"
+    },
+    {
+        "transaction": {
+            "amount": 250000,
+            "origin_country": "AE",
+            "destination_country": "LU",
+            "parties": [
+                "dubai_holdings"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571"
+        },
+        "customer": {
+            "name": "Luxembourg Investments LLC",
+            "account_age_days": 2,
+            "transaction_history": [
+                {
+                    "amount": 300000,
+                    "timestamp": "2025-03-27T07:20:16.639571"
+                }
+            ]
+        },
+        "scenario": "New account with high-value transactions",
+        "expected_outcome": "Enhanced due diligence + monitoring"
+    },
+    {
+        "transaction": {
+            "amount": 75000,
+            "origin_country": "GB",
+            "destination_country": "VG",
+            "parties": [
+                "consulting_firm_uk",
+                "offshore_holdings_vg",
+                "shell_co_1",
+                "shell_co_2"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571",
+            "intermediate_countries": [
+                "CY",
+                "MT"
+            ]
+        },
+        "customer": {
+            "name": "UK Consulting Partners",
+            "account_age_days": 90,
+            "transaction_history": []
+        },
+        "scenario": "Complex payment chain through tax havens",
+        "expected_outcome": "Network analysis alert + SAR"
+    },
+    {
+        "transaction": {
+            "amount": 350000,
+            "origin_country": "ZA",
+            "destination_country": "MY",
+            "parties": [
+                "african_wildlife_co"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571",
+            "documents": [
+                "Ivory Shipment Permit #IV-789"
+            ]
+        },
+        "customer": {
+            "name": "Malaysian Antiques Ltd",
+            "account_age_days": 45,
+            "transaction_history": []
+        },
+        "scenario": "Wildlife trafficking proceeds",
+        "expected_outcome": "Document analysis alert + SAR"
+    },
+    {
+        "transaction": {
+            "amount": 2000000,
+            "origin_country": "RU",
+            "destination_country": "IN",
+            "parties": [
+                "sanctioned_russian_bank",
+                "intermediary_ae"
+            ],
+            "timestamp": "2025-03-27T19:20:16.639571",
+            "intermediate_countries": [
+                "AE",
+                "TR"
+            ]
+        },
+        "customer": {
+            "name": "Mumbai Imports Ltd",
+            "account_age_days": 30,
+            "transaction_history": []
+        },
+        "scenario": "Sanctioned entity bypass",
+        "expected_outcome": "Sanctions hit + immediate freezing"
+    }
+]
