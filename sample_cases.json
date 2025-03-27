@@ -27,8 +27,7 @@
                 }
             ]
         },
-        "scenario": "Repeated sub-threshold transactions (structuring)",
-        "expected_outcome": "SAR filing for structuring"
+        "scenario": "Repeated sub-threshold transactions (structuring)"
     },
     {
         "transaction": {
@@ -48,8 +47,7 @@
             "account_age_days": 45,
             "transaction_history": []
         },
-        "scenario": "High-risk country transaction",
-        "expected_outcome": "High risk score + enhanced due diligence"
+        "scenario": "High-risk country transaction"
     },
     {
         "transaction": {
@@ -69,8 +67,7 @@
             "account_age_days": 10,
             "transaction_history": []
         },
-        "scenario": "PEP transaction",
-        "expected_outcome": "Immediate PEP alert + SAR filing"
+        "scenario": "PEP transaction"
     },
     {
         "transaction": {
@@ -88,8 +85,7 @@
             "account_age_days": 30,
             "transaction_history": []
         },
-        "scenario": "Cryptocurrency mixer usage",
-        "expected_outcome": "High crypto risk score + SAR"
+        "scenario": "Cryptocurrency mixer usage"
     },
     {
         "transaction": {
@@ -110,8 +106,7 @@
             "account_age_days": 60,
             "transaction_history": []
         },
-        "scenario": "Trade invoice mismatch",
-        "expected_outcome": "Document anomaly alert + investigation"
+        "scenario": "Trade invoice mismatch"
     },
     {
         "transaction": {
@@ -133,8 +128,7 @@
                 }
             ]
         },
-        "scenario": "New account with high-value transactions",
-        "expected_outcome": "Enhanced due diligence + monitoring"
+        "scenario": "New account with high-value transactions"
     },
     {
         "transaction": {
@@ -158,8 +152,7 @@
             "account_age_days": 90,
             "transaction_history": []
         },
-        "scenario": "Complex payment chain through tax havens",
-        "expected_outcome": "Network analysis alert + SAR"
+        "scenario": "Complex payment chain through tax havens"
     },
     {
         "transaction": {
@@ -179,8 +172,7 @@
             "account_age_days": 45,
             "transaction_history": []
         },
-        "scenario": "Wildlife trafficking proceeds",
-        "expected_outcome": "Document analysis alert + SAR"
+        "scenario": "Wildlife trafficking proceeds"
     },
     {
         "transaction": {
@@ -202,7 +194,6 @@
             "account_age_days": 30,
             "transaction_history": []
         },
-        "scenario": "Sanctioned entity bypass",
-        "expected_outcome": "Sanctions hit + immediate freezing"
+        "scenario": "Sanctioned entity bypass"
     }
 ]
