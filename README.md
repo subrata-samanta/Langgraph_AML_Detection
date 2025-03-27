@@ -1,67 +1,66 @@
-# AML Detection System using LangGraph
+# 🔍 AML Detection System using LangGraph
 
-A sophisticated Anti-Money Laundering (AML) detection system built using the LangGraph framework. This tool leverages graph-based analysis to identify suspicious financial patterns and potential money laundering activities. Features graph-based transaction analysis and pattern detection for enhanced AML compliance.
+A sophisticated Anti-Money Laundering (AML) detection system built using the LangGraph framework. This tool leverages graph-based analysis to identify suspicious financial patterns and potential money laundering activities.
 
-
-## System Architecture
+## 🏗️ System Architecture
 
 ![AML Detection System Architecture](https://github.com/subrata-samanta/Langgraph_AML_Detection/blob/main/graph.png)
 
-The system uses a state-based graph workflow with the following key components:
+The system implements a state-based graph workflow with these key components:
 
-- **State Management**: [`AMLState`](aml.py) class handling transaction data and analysis results
-- **Risk Assessment Nodes**:
-  - Document Analysis
-  - Geographic Risk Assessment
-  - Behavioral Analysis
-  - Crypto Risk Analysis
-  - Sanctions Screening
-  - PEP Screening
-- **Decision Routing**: Conditional paths based on risk levels and transaction types
+- 📊 **State Management**: [`AMLState`](aml.py) class handling transaction data and analysis results
+- 🎯 **Risk Assessment Nodes**:
+  - 📄 Document Analysis
+  - 🌍 Geographic Risk Assessment
+  - 👤 Behavioral Analysis
+  - 💰 Crypto Risk Analysis
+  - ⚠️ Sanctions Screening
+  - 👔 PEP Screening
+- 🔄 **Decision Routing**: Smart paths based on risk levels and transaction types
 
+## ✨ Features
 
-## Features
+### 🔑 Core Functionality
+- 📈 Graph-based transaction analysis workflow
+- ⚡ Real-time risk scoring and assessment
+- 🎯 Multi-factor AML detection:
+  - 🌎 Geographic risk assessment
+  - 🔍 Behavioral pattern analysis
+  - 📝 Document verification
+  - 🪙 Cryptocurrency monitoring
+  - 👥 PEP screening
+  - 🚫 Sanctions checking
 
-### Core Functionality
-- Graph-based transaction analysis workflow
-- Real-time risk scoring and assessment
-- Multi-factor AML detection including:
-  - Geographic risk assessment
-  - Behavioral pattern analysis
-  - Document verification
-  - Cryptocurrency transaction monitoring
-  - PEP (Politically Exposed Person) screening
-  - Sanctions list checking
+### 🚀 Advanced Capabilities
+- 📑 Automated SAR generation
+- 🔍 Enhanced due diligence workflows
+- 🎯 Risk-based routing
+- 📄 Document analysis using LLM
+- ⚙️ Configurable risk thresholds
 
-### Advanced Capabilities
-- Automated SAR (Suspicious Activity Report) generation
-- Enhanced due diligence workflows
-- Risk-based routing and decisioning
-- Document analysis using LLM
-- Configurable risk thresholds
+## 🛠️ Setup
 
-## Setup
-
-1. Install required dependencies:
+1. Install dependencies:
 ```sh
 pip install langgraph langchain-groq
 ```
 
-2. Configure environment variables:
+2. Set environment variables:
 ```sh
 export GROQ_API_KEY=your_api_key_here
 ```
 
-3. Prepare sample data:
-- Ensure `sample_cases.json` is present in the root directory
-- Format should match the provided test cases
+3. Prepare data:
+- Add `sample_cases.json` to root directory
+- Match provided test case format
 
-## Usage
+## 💻 Usage
 
 ```python
-from aml import run_analysis
 
-# Example transaction
+from aml_langgraph import run_analysis
+
+# Sample transaction
 transaction = {
     "amount": 9500,
     "origin_country": "US",
@@ -70,7 +69,7 @@ transaction = {
     "timestamp": "2025-03-27T19:20:16.639571"
 }
 
-# Example customer data
+# Sample customer data
 customer = {
     "name": "James Smith",
     "account_age_days": 120,
@@ -81,36 +80,35 @@ customer = {
 run_analysis(transaction, customer)
 ```
 
-## Configuration
+## ⚙️ Configuration
 
-The system includes configurable risk parameters:
+Customize risk parameters:
+- 🌍 High-risk countries
+- 💰 Tax haven jurisdictions
+- ⚠️ Sanctioned entities
+- 🕸️ Darknet identifiers
+- 📊 Risk scoring weights
 
-- High-risk countries
-- Tax haven jurisdictions
-- Sanctioned entities list
-- Darknet market identifiers
-- Risk scoring weights
+Edit in the [configuration section](aml.py).
 
-These can be modified in the [configuration section](aml.py) of the code.
+## 📊 Output
 
-## Output
+Generated analysis includes:
+- 📈 Risk scores (0-100)
+- 🔄 Decision path visualization
+- ⚠️ Triggered alerts
+- 🤖 LLM analysis results
+- 📝 SAR status
+- 👥 Review requirements
 
-The system generates detailed analysis reports including:
-- Risk scores (0-100)
-- Decision path visualization
-- Triggered alerts
-- LLM analysis findings
-- SAR generation status
-- Human review requirements
+## 🤝 Contributing
 
-## Contributing
+1. Fork repository
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Submit Pull Request
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
+## 📄 License
 
-## License
-
-This project is open-source and available under the MIT License.
+MIT License
