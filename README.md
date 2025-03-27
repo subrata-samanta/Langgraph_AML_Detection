@@ -28,6 +28,8 @@ A sophisticated Anti-Money Laundering (AML) detection system built using the Lan
 
 ## System Architecture
 
+![AML Detection System Architecture](https://github.com/subrata-samanta/Langgraph_AML_Detection/blob/main/graph.png)
+
 The system uses a state-based graph workflow with the following key components:
 
 - **State Management**: [`AMLState`](aml.py) class handling transaction data and analysis results
