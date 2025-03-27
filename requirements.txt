@@ -1,0 +1,2 @@
+langchain_groq==0.3.1
+langgraph==0.3.20
